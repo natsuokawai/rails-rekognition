@@ -1,0 +1,15 @@
+current directory: /Users/kawainatsuki/Projects/rails-rekognition-sample/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.4/ext/bootsnap
+/Users/kawainatsuki/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190818-45106-1ddc9ak.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kawainatsuki/Projects/rails-rekognition-sample/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/kawainatsuki/Projects/rails-rekognition-sample/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/kawainatsuki/Projects/rails-rekognition-sample/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190818-45106-6ovcrp/bootsnap
