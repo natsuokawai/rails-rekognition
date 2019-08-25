@@ -19,8 +19,10 @@ class AmazonRekognition
       })
 
       searched_face_id = res.to_h[:searched_face_id]
-      matched_face_id = res.to_h[:face_matches][0][:face][:face_id]
+      matched_faces = res.to_h[:face_matches]
+      return if matched_faces.blank?
 
+      matched_face_id = matched_faces[0][:face][:face_id]
       { searched_face_id: searched_face_id, matched_face_id: matched_face_id }
     end
 
@@ -29,12 +31,13 @@ class AmazonRekognition
 
       matched_faces = faces.map do |face_id, bounding_box|
         result = search_faces(face_id)
-        result[:searched_face_bounding_box] = bounding_box
+        next if result.blank?
 
+        result[:searched_face_bounding_box] = bounding_box
         result
       end
 
-      matched_faces
+      matched_faces.compact
     end
 
     private
