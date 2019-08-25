@@ -1,0 +1,145 @@
+EXPORTS
+    Init_cairo
+    rb_mCairo                 DATA
+    rb_cCairo_Context         DATA
+    rb_cCairo_Rectangle       DATA
+    rb_cCairo_Path            DATA
+    rb_cCairo_PathData        DATA
+    rb_cCairo_PathMoveTo      DATA
+    rb_cCairo_PathLineTo      DATA
+    rb_cCairo_PathCurveTo     DATA
+    rb_cCairo_PathClosePath   DATA
+    rb_cCairo_Matrix          DATA
+    rb_cCairo_Region          DATA
+
+    rb_cCairo_Pattern         DATA
+    rb_cCairo_SolidPattern    DATA
+    rb_cCairo_SurfacePattern  DATA
+    rb_cCairo_GradientPattern DATA
+    rb_cCairo_LinearPattern   DATA
+    rb_cCairo_RadialPattern   DATA
+    rb_cCairo_MeshPattern     DATA
+    rb_cCairo_RasterSourcePattern DATA
+
+    rb_cCairo_FontFace        DATA
+    rb_cCairo_FreeTypeFontFace DATA
+    rb_cCairo_ToyFontFace     DATA
+    rb_cCairo_UserFontFace    DATA
+    rb_cCairo_UserFontFace_TextToGlyphsData DATA
+    rb_cCairo_FontExtents     DATA
+    rb_cCairo_FontOptions     DATA
+    rb_cCairo_ScaledFont      DATA
+    rb_cCairo_TextExtents     DATA
+    rb_cCairo_Glyph           DATA
+    rb_cCairo_TextCluster     DATA
+    rb_cCairo_Surface         DATA
+    rb_cCairo_ImageSurface    DATA
+    rb_cCairo_PDFSurface      DATA
+    rb_cCairo_PSSurface       DATA
+    rb_cCairo_SVGSurface      DATA
+    rb_cCairo_Win32Surface    DATA
+    rb_cCairo_Win32PrintingSurface DATA
+    rb_cCairo_QuartzSurface   DATA
+    rb_cCairo_QuartzImageSurface DATA
+    rb_cCairo_ScriptSurface   DATA
+    rb_cCairo_QtSurface       DATA
+    rb_cCairo_RecordingSurface DATA
+    rb_cCairo_VGSurface       DATA
+    rb_cCairo_GLSurface       DATA
+    rb_cCairo_GLTextureSurface DATA
+    rb_cCairo_DRMSurface      DATA
+    rb_cCairo_TeeSurface      DATA
+    rb_cCairo_XMLSurface      DATA
+    rb_cCairo_SubSurface      DATA
+    rb_cCairo_CoglSurface     DATA
+
+    rb_cCairo_Device          DATA
+    rb_cCairo_DRMDevice       DATA
+    rb_cCairo_GLDevice        DATA
+    rb_cCairo_ScriptDevice    DATA
+    rb_cCairo_XCBDevice       DATA
+    rb_cCairo_XlibDevice      DATA
+    rb_cCairo_XMLDevice       DATA
+    rb_cCairo_CoglDevice      DATA
+    rb_cCairo_Win32Device     DATA
+
+    rb_mCairo_Operator        DATA
+    rb_mCairo_Antialias       DATA
+    rb_mCairo_FillRule        DATA
+    rb_mCairo_LineCap         DATA
+    rb_mCairo_LineJoin        DATA
+    rb_mCairo_FontSlant       DATA
+    rb_mCairo_FontWeight      DATA
+    rb_mCairo_SubpixelOrder   DATA
+    rb_mCairo_HintStyle       DATA
+    rb_mCairo_HintMetrics     DATA
+    rb_mCairo_PathDataType    DATA
+    rb_mCairo_Content         DATA
+    rb_mCairo_Format          DATA
+    rb_mCairo_Extend          DATA
+    rb_mCairo_Filter          DATA
+    rb_mCairo_SVGVersion      DATA
+    rb_mCairo_PSLevel         DATA
+    rb_mCairo_PDFVersion      DATA
+    rb_mCairo_TextClusterFlag DATA
+    rb_mCairo_ScriptMode      DATA
+    rb_mCairo_MimeType        DATA
+    rb_mCairo_RegionOverlap   DATA
+    rb_mCairo_PDFOutlineFlags DATA
+    rb_mCairo_PDFMetadata     DATA
+    rb_mCairo_SVGUnit         DATA
+
+    rb_mCairo_Color           DATA
+    rb_cCairo_Color_Base      DATA
+    rb_cCairo_Paper           DATA
+
+    rb_cairo_context_from_ruby_object
+    rb_cairo_context_to_ruby_object
+    rb_cairo_path_from_ruby_object
+    rb_cairo_path_to_ruby_object
+    rb_cairo_matrix_from_ruby_object
+    rb_cairo_matrix_to_ruby_object
+    rb_cairo_region_from_ruby_object
+    rb_cairo_region_to_ruby_object
+    rb_cairo_pattern_from_ruby_object
+    rb_cairo_pattern_to_ruby_object
+    rb_cairo_font_face_from_ruby_object
+    rb_cairo_font_face_to_ruby_object
+    rb_cairo_font_extents_from_ruby_object
+    rb_cairo_font_extents_to_ruby_object
+    rb_cairo_font_options_to_ruby_object
+    rb_cairo_font_options_from_ruby_object
+    rb_cairo_scaled_font_to_ruby_object
+    rb_cairo_scaled_font_from_ruby_object
+    rb_cairo_text_extents_from_ruby_object
+    rb_cairo_text_extents_to_ruby_object
+    rb_cairo_glyph_from_ruby_object
+    rb_cairo_glyph_to_ruby_object
+    rb_cairo_text_cluster_from_ruby_object
+    rb_cairo_text_cluster_to_ruby_object
+    rb_cairo_surface_from_ruby_object
+    rb_cairo_surface_to_ruby_object
+    rb_cairo_surface_to_ruby_object_with_destroy
+    rb_cairo_device_from_ruby_object
+    rb_cairo_device_to_ruby_object
+    rb_cairo_operator_from_ruby_object
+    rb_cairo_antialias_from_ruby_object
+    rb_cairo_fill_rule_from_ruby_object
+    rb_cairo_line_cap_from_ruby_object
+    rb_cairo_line_join_from_ruby_object
+    rb_cairo_font_slant_from_ruby_object
+    rb_cairo_font_weight_from_ruby_object
+    rb_cairo_subpixel_order_from_ruby_object
+    rb_cairo_hint_style_from_ruby_object
+    rb_cairo_hint_metrics_from_ruby_object
+    rb_cairo_path_data_type_from_ruby_object
+    rb_cairo_content_from_ruby_object
+    rb_cairo_format_from_ruby_object
+    rb_cairo_extend_from_ruby_object
+    rb_cairo_filter_from_ruby_object
+    rb_cairo_svg_version_from_ruby_object
+    rb_cairo_ps_level_from_ruby_object
+    rb_cairo_pdf_version_from_ruby_object
+    rb_cairo_text_cluster_flags_from_ruby_object
+    rb_cairo_check_status
+    rb_cairo_surface_check_status

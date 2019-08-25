@@ -1,0 +1,48 @@
+current directory: /Users/kawainatsuki/Projects/rails-rekognition-sample/vendor/bundle/ruby/2.5.0/gems/cairo-1.16.4/ext/cairo
+/Users/kawainatsuki/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190825-67790-63eykd.rb extconf.rb
+checking for GCC... yes
+checking for Homebrew... yes
+checking for cairo version (>= 1.2.0)... no
+installing 'cairo' native package... succeeded
+checking for cairo version (>= 1.2.0)... yes
+checking for cairo-ft... yes
+checking for macOS... yes
+checking for HAVE_RUBY_ST_H in ruby.h... yes
+checking for HAVE_RUBY_IO_H in ruby.h... yes
+checking for rb_errinfo() in ruby.h... yes
+checking for rb_gc_adjust_memory_usage() in ruby.h... yes
+checking for enum ruby_value_type in ruby.h... yes
+creating Makefile
+
+current directory: /Users/kawainatsuki/Projects/rails-rekognition-sample/vendor/bundle/ruby/2.5.0/gems/cairo-1.16.4/ext/cairo
+make "DESTDIR=" clean
+
+current directory: /Users/kawainatsuki/Projects/rails-rekognition-sample/vendor/bundle/ruby/2.5.0/gems/cairo-1.16.4/ext/cairo
+make "DESTDIR="
+compiling rb_cairo.c
+compiling rb_cairo_constants.c
+compiling rb_cairo_context.c
+compiling rb_cairo_device.c
+compiling rb_cairo_exception.c
+compiling rb_cairo_font_extents.c
+compiling rb_cairo_font_face.c
+compiling rb_cairo_font_options.c
+compiling rb_cairo_glyph.c
+compiling rb_cairo_io.c
+compiling rb_cairo_matrix.c
+compiling rb_cairo_path.c
+compiling rb_cairo_pattern.c
+compiling rb_cairo_private.c
+compiling rb_cairo_quartz_surface.c
+compiling rb_cairo_rectangle.c
+compiling rb_cairo_region.c
+compiling rb_cairo_scaled_font.c
+compiling rb_cairo_surface.c
+compiling rb_cairo_text_cluster.c
+compiling rb_cairo_text_extents.c
+linking shared-object cairo.bundle
+
+current directory: /Users/kawainatsuki/Projects/rails-rekognition-sample/vendor/bundle/ruby/2.5.0/gems/cairo-1.16.4/ext/cairo
+make "DESTDIR=" install
+/usr/bin/install -c -m 644 ./rb_cairo.h ./.gem.20190825-67790-124at3p
+/usr/bin/install -c -m 0755 cairo.bundle ./.gem.20190825-67790-124at3p

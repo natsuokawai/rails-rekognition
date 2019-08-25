@@ -1,0 +1,782 @@
+Release 1.16.4 (2019-03-09) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Fixes
+-----
+
+  * Removed Skia related code entirely.
+
+Release 1.16.3 (2019-03-09) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Improvements
+------------
+
+  * Improved Cairo::Poinst#distance performance.
+    [GitHub#53][Patch by scivola]
+
+  * Added support for building with cairo and GLib 2.60 installed by
+    Homebrew.
+
+  * Updated colors. There are some backward incompatibility. Sorry.
+
+Fixes
+-----
+
+  * Fixed Cairo::Color::RGB#to_s.
+    [GitHub#55][Patch by spoolkitamura]
+
+Thanks
+------
+
+  * scivola
+
+  * spoolkitamura.
+
+Release 1.16.2 (2018-10-31) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Improvements
+------------
+
+  * Stopped to provide fat gem for Windows. Windows users should use
+    MSYS2 packages.
+
+Release 1.16.1 (2018-10-31) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Improvements
+------------
+
+  * Added Cairo::Context#destroyed?.
+
+Release 1.16.0 (2018-10-28) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Improvements
+------------
+
+  * Added support for cairo 1.16.0.
+
+  * Removed Cairo::SkiaSurface.
+
+Release 1.15.14 (2018-08-20) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Improvements
+------------
+
+  * Added Cairo::Surface.create {}. Cairo::Surface.new {} is deprecated.
+
+  * Added Cairo::Context.create {}. Cairo::Context.new {} is deprecated.
+
+  * Windows: Added support for installing a normal gem (not fat gem)
+    by "gem install --platform ruby". If you use Bundler, use "bundle
+    config --local force_ruby_platform true" and "bundle exec ruby -rdevkit".
+
+  * Changed to use SPDX license ID in gemspec.
+
+Fixes
+-----
+
+  * Fixed a bug that CRFONTOPTIOSN2RVAL() doesn't copy the target
+    options.
+    * Other CR*2RVAL() copy or refer the target objects. So
+      CRFONTOPTIONS2RVAL() must copy for consistency.
+
+Release 1.15.13 (2018-05-01) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Improvements
+------------
+
+  * Added cairo 1.15.12 support.
+
+    * Added Cairo::FontOptions#variations
+
+    * Added Cairo::FontOptions#variations=
+
+Release 1.15.12 (2018-03-14) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Improvements
+------------
+
+  * Re-enabled tests that need Poppler.
+    [GitHub#51][Patch by Mamoru TASAKA]
+
+  * Windows: Added Ruby 2.5 support.
+    [GitHub#52][Reported by Andy Meneely]
+
+Thanks
+------
+
+  * Mamoru TASAKA
+
+  * Andy Meneely
+
+Release 1.15.11 (2017-12-14) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Improvements
+------------
+
+  * Added cairo 1.15.10 support.
+
+    * Added Cairo::SVGUnit
+
+    * Added Cairo::SVGSurface#document_unit
+
+    * Added Cairo::SVGSurface#document_unit=
+
+    * Added Cairo::MIMEType::CCITT_FAX
+
+    * Added Cairo::MIMEType::CCITT_FAX_PARAMS
+
+    * Added Cairo::MIMEType::EPS
+
+    * Added Cairo::MIMEType::EPS_PARAMS
+
+  * test: Updated expected value for cairo 1.15.
+    [GitHub#50][Reported by Mamoru TASAKA]
+
+  * Windows: Updated bundled libraries:
+
+    * libpng: 1.6.32 -> 1.6.34
+
+    * libxml2: 2.9.6 -> 2.9.7
+
+    * cairo: 1.15.8 -> 1.15.10
+
+Thanks
+------
+
+  * Mamoru TASAKA
+
+Release 1.15.10 (2017-10-15) Kouhei Sutou <kou@cozmixng.org>
+============================================================
+
+Improvements
+------------
+
+  * Windows: Ensure setting PATH environment variable.
+
+  * Added cairo 1.15.8 support.
+
+  * Windows: Updated bundled libraries:
+
+    * libpng: 1.6.29 -> 1.6.32
+
+    * freetype: 2.9.4 -> 2.9.6
+
+    * fontconfig: 2.12.1 -> 2.12.4
+
+    * cairo: 1.15.4 -> 1.15.8
+
+Release 1.15.9 (2017-06-03) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Supported RubyInstaller2.
+    [GitHub#47][Reported by PLURIX]
+
+Thanks
+------
+
+  * PLURIX
+
+Release 1.15.8 (2017-05-29) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Added Cairo::FreeTypeFotnFace.
+    [GitHub#45][Patch by Stafford Brunk]
+
+  * Windows: Supported Ruby 2.4.
+    [ruby-list:50525][Reported by 5.5]
+
+  * Windows: Supported MSYS2.
+
+  * Windows: Updated bundled libraries:
+    * zlib: 1.2.8 -> 1.2.11
+
+Thanks
+------
+
+  * Stafford Brunk
+
+  * 5.5
+
+Release 1.15.7 (2017-05-01) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Fixes
+-----
+
+  * Windows: Fixed zlib version. We should use the same version
+    as Ruby Installer. Ruby Installer uses zlib 1.2.8.
+    [GitHub#47][Reported by jjgh]
+
+Thanks
+------
+
+  * jigh
+
+Release 1.15.6 (2017-04-27) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Added Cairo::Context#refrence_count.
+  * Windows: Updated bundled libraries:
+    * zlib: 1.2.10 -> 1.2.11
+    * libpng: 1.6.27 -> 1.6.29
+    * FreeType: 2.7 -> 2.7.1
+  * Used native-package-installer gem.
+
+Release 1.15.5 (2017-01-14) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Windows: Applied the patch at
+    https://bugs.freedesktop.org/show_bug.cgi?id=99054 that fixes
+    unexpected assertion failure in win32 surface.
+
+Release 1.15.4 (2017-01-07) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Supported cairo 1.15.4:
+    * Added Cairo::PNGError.
+    * Added Cairo::FreeTypeError.
+    * Added Cairo::Win32GDIError.
+    * Added Cairo::TagError.
+    * Added Cairo::Tag::DEST.
+    * Added Cairo::Tag::LINK.
+    * Added Cairo::Context#tag.
+    * Added Cairo::Context#begin_tag.
+    * Added Cairo::Context#end_tag.
+    * Added Cairo::PDFOutlineFlags.
+    * Added Cairo::PDFOutline.
+    * Added Cairo::PDFSurface#add_outline.
+    * Added Cairo::PDFMetadata.
+    * Added Cairo::PDFSurface#set_metadata.
+    * Added Cairo::PDFSurface#page_label=.
+    * Added Cairo::PDFSurface#set_thumbnail_size.
+
+Release 1.15.3 (2016-11-15) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Changed Cairo::FontOptions#== behavior to value equality check
+    from object equality check.
+  * Windows: Supported Ruby 2.4.
+  * Windows: Updated bundled libpng.
+  * Windows: Updated bundled freetype.
+  * Windows: Updated bundled libxml.
+  * Windows: Updated bundled fontconfig.
+  * Windows: Updated bundled pixman.
+  * Made Cairo::ImageSurface GC friendly with Ruby 2.4.
+  * Cairo::SVGSurface: Accepted nil as filename.
+    [GitHub#43][Reported by Andy Meneely]
+  * Cairo::PSSurface: Accepted nil as filename.
+  * Cairo::PDFSurface: Accepted nil as filename.
+
+Release 1.15.2 (2016-04-02) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Supported cairo 1.15.2.
+  * Cairo::Win32Surface.new(hdc, format): Added.
+  * Dropped Ruby 2.0 support.
+  * Windows: Supported Ruby 2.3.
+
+Release 1.14.3 (2015-09-08) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Fixes
+-----
+
+ * Fixed run-time error on OS X.
+   [shocker-ja:1270][Reported by Junichi Oya]
+
+Thanks
+------
+
+ * Junichi Oya
+
+Release 1.14.2 (2015-09-06) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+ * Supported showing command execution result on failure.
+   [GitHub#36][Reported by Paul McMahon]
+ * Cairo::Region#each_rectangle: Added a convenience method.
+ * Cairo::Region#rectangles: Added a convenience method.
+ * Supported Pathname as output target for surface.
+   [GitHub#37][Reported by scivola]
+ * Exported rb_cairo_surface_check_status().
+ * Windows: Upgraded bundled libraries.
+
+Thanks
+------
+
+ * Paul McMahon
+ * scivola
+
+Release 1.14.1 (2014-12-23) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Windows users must upgrade. Non Windows users doesn't need to
+upgrade.
+
+Improvements
+------------
+
+ * Upgraded bundled libraries for Windows. libpng is upgraded to
+   1.6.16 from 1.6.14. libpng 1.6.14 has vulnerability.
+
+Release 1.14.0 (2014-11-24) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Supported integration with ffi gem.
+    [GitHub#20][Patch by Patrick Hanevold]
+  * Supported cairo 1.14.0.
+    [GitHub#24][GitHub#25][GitHub#28][GitHub#30][Patch by Hiroshi Hatake]
+  * Added libstdc++-6.dll into gem for Windows.
+
+Fixes
+-----
+
+  * Fixed an build error on Cygwin.
+    [GitHub#19][Reported by Patrick Hanevold][Patch by Masafumi Yokoyama]
+    [ruby-gnome2-devel-en][Reported by Detlef Reichl]
+
+Thanks
+------
+
+  * Patrick Hanevold
+  * Masafumi Yokoyama
+  * Hiroshi Hatake
+
+Release 1.12.9 (2014-04-05) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Supported cocoa gem. [Patch by Patrick Hanevold]
+  * Made Cairo::Rectangle based on cairo_rectangle_int_t. It improves
+    Ruby/GDK3 integration.
+  * windows: Dropped binary packages support for Ruby 1.9.3.
+
+Fixes
+-----
+
+  * Fixed a bug that Cairo::Context isn't GC-ed without explicit
+    Cairo::Context#destroy.
+    [ruby-gnome2-devel-en][Reported by Detlef Reichl]
+
+Thanks
+------
+
+  * Patrick Hanevold
+  * Detlef Reichl
+
+Release 1.12.8 (2013-12-23) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Fixes
+-----
+
+  * Bundled missing libwinpthread-1.dll into gem for Windows.
+    [Reported by Masafumi Yokoyama]
+
+Thanks
+------
+
+  * Masafumi Yokoyama
+
+Release 1.12.7 (2013-12-23) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Added paper sizes of ISO B series and JIS B series.
+    [Patch by 5.5]
+  * Added Windows binary for Ruby 2.1.0.
+  * Updated bundled cairo to 1.12.16 from 1.12.14 for Windows.
+
+Fixes
+-----
+
+  * Fixed a bug that Cairo::ImageSurface.new(cloned_data, ...)
+    changes both the original data and the cloned data.
+    [Patch by Naoyuki Hirayama]
+
+Thanks
+------
+
+  * 5.5
+  * Naoyuki Hirayama
+
+Release 1.12.6 (2013-05-24) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Supported Windows XP again.
+    [ruby-list:49392][Reported by 5.5]
+    [ruby-list:49401][Researched by myokoym]
+
+Thanks
+------
+
+  * 5.5
+  * myokoym
+
+Release 1.12.5 (2013-05-18) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Updated bundled cairo binary for Windows to 1.12.14.
+
+Release 1.12.4 (2013-03-11) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Added Windows binary for Ruby 2.0.0.
+
+Release 1.12.3 (2012-12-04) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Supported Ruby 2.0.0.
+    [Reported by tmtms]
+  * Supported auto native package install by Homebrew and MacPorts.
+
+Thanks
+------
+
+  * tmtms
+
+Release 1.12.2 (2012-06-03) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Added Cairo::Device.supported?.
+    [GitHub#11] [Reported by Cédric Boutillier]
+  * Added Cairo::Device.gl_texture_supported?.
+  * Added Cairo::Surface.supported?.
+  * Defined all surfaces even if a surface isn't available. Use
+    Cairo::Surface.XXX_supported? method to check surface
+    availability.
+  * Added Cairo::Pattern.xxx_supported?.
+    [GitHub#12] [Reported by Mamoru Tasaka]
+  * [experimental] Supported auto native package install.
+
+Thanks
+------
+
+  * Cédric Boutillier
+  * Mamoru Tasaka
+
+Release 1.12.1 (2012-03-31) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Re-supported cairo < 1.10.0.
+    [ruby-gnome2-devel-en] Help me install my own program [Eric C.]
+
+Fixes
+-----
+
+  * Fixed a problem that an unresolved symbol is referenced.
+
+Thanks
+------
+
+  * Eric C.
+
+Release 1.12.0 (2012-03-25) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Improvements
+------------
+
+  * Supported cairo 1.12.0.
+    * Cairo::Surface#supported_mime_type?
+    * Cairo::Surface#create_similar_image
+    * Cairo::Surface#map_to_image
+    * Cairo::Surface#unmap_to_image
+    * Cairo::RecordingSurface#extents
+    * Cairo::MeshPattern
+    * Cairo::RasterSourcePattern
+    * Cairo::MimeType::UNIQUE_ID
+  * Supported glesv2 surface.
+
+Fixes
+-----
+
+  * Fixed a bug that Cairo::HINT_METRICS_ON can't be specified. #8
+    [Vasily Fedoseyev]
+
+Thanks
+------
+
+  * Vasily Fedoseyev
+
+Release 1.10.2 (2011-11-20) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Fixes
+-----
+
+  * Added missing pkg-config dependency. #8 [Will Bryant]
+
+Thanks
+------
+
+  * Will Bryant
+
+Release 1.10.1 (2011-10-12) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Features
+--------
+
+  * Accepted Cairo::EXTEND_PAD as extend value.
+  * Suppressed a warning. [Stefan Salewski]
+  * Bound CAIRO_SURFACE_TYPE_XLIB and CAIRO_SURFACE_TYPE_XCB.
+  * Supported cairo 1.10.2.
+  * Fixed recording surface test. #4 [Mamoru Tasaka]
+  * AcceptedCairo::OPERATOR_HSL_LUMINDSITY as operator value.
+    #6 [Matt Bramlage]
+  * Suppressed warnings on Windows. [Nikolai Weibull]
+  * Added --without-vendor-override options to extconf.rb.
+    [Nikolai Weibull]
+
+Thanks
+------
+
+  * Stefan Salewski
+  * Mamoru Tasaka
+  * Matt Bramlage
+  * Nikolai Weibull
+
+Release 1.10.0 (2010-09-12) Kouhei Sutou <kou@cozmixng.org>
+===========================================================
+
+Features
+--------
+
+  * Support cairo 1.10.0.
+
+Release 1.8.5 (2010-08-28) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Fixes
+-----
+  * Fix build system. (patch by kimura watasu and suggested by OBATA Akio)
+  * Fix Windows gem. (reported by Dominic Sisneros, supported by Masaya TARUI)
+
+Thanks
+------
+  * Dominic Sisneros
+  * kimura wataru
+  * OBATA Akio
+  * Masaya TARUI
+
+Release 1.8.3 (2010-08-26) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Features
+--------
+  * Support cairo 1.8.10.
+  * Support Ruby 1.9.2. (reported by Tasuku SUENAGA and kimura wataru)
+  * Fix RGV -> HSV conversion. (patch by Yuta Taniguchi)
+  * Support Cairo::Color as Hash key.
+
+Thanks
+------
+  * Yuta Taniguchi
+  * Tasuku SUENAGA
+  * kimura wataru
+
+Release 1.8.1 (2009-12-13) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Features
+--------
+  * Support cairo 1.8.8.
+  * Improve auto .pc detection.
+
+Release 1.8.0 (2008-09-26) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Features
+--------
+  * Support cairo 1.8.0.
+  * Resupport cairo 1.2.x. (reported by Yusuke ENDOH)
+
+Release 1.7.0 (2008-08-17) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Features
+--------
+  * Support cairo 1.7.4.
+  * Add new methods:
+    * Cairo::Context#destroy
+    * Cairo::Surface#destroy
+    * Cairo.satisfied_version?
+  * Resupport ruby 1.9. (suggested by Paul van Tilburg)
+  * Fix README. (suggested by Davide Rambaldi)
+
+Release 1.6.3 (2008-07-19) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Features
+--------
+  * Fix build failure on Debian GNU/Linux. (reported by James Healy)
+  * Fix GC failure with Ruby 1.8.7. (reported by James Healy)
+  * Improve building on MacOS X. (suggested by Carsten Bormann)
+  * Fix install location of cairo.so. (suggested by OBATA Akio)
+
+Release 1.6.2 (2008-06-14) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Features
+--------
+  * Fix build failure on MacOS X.
+  * Fix build failure on 64bit Linux.
+  * Fix build failure with old Ruby.
+  * Fix build failure with Ruby 1.9.
+
+Release 1.6.1 (2008-04-24) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Features
+--------
+  * Fix Quartz related bugs. (thanks to kimura wataru)
+  * Support PKG_CONFIG_LIBDIR. (thanks to OBATA Akio)
+  * Support RubyGems for mswin32.
+
+Release 1.6.0 (2008-04-11) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Features
+--------
+  * Support cairo 1.6.0.
+  * Improve Quartz surface support. (thanks to kimura wataru, OBATA Akio)
+  * Support Cairo::Win32PrintingSurface.
+  * Support Cairo::QuartzImageSurface.
+  * Support ruby 1.9.0.
+  * Add Cairo::Paper.
+    * Improve size specification of Cairo::PSSurface,
+      Cairo::PDFSurface, Cairo::SVGSurface.
+
+Release 1.5.1 (2008-01-11) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Features
+--------
+  * Support Quartz surface.
+  * Fix a wrong type conversion bug. (Binzo)
+  * Fix a memory leak bug. (Binzo)
+  * Support ruby 1.9.0. (Paul van Tilburg)
+  * Fix typos. (NANKI Haruo)
+  * Rename Cairo::WIN32Surface to Cairo::Win32Surface
+    * Cairo::WIN32Surface is still available for backward compatibility but
+      don't use in newly written code.
+
+Release 1.5.0 (2007-05-27) Kouhei Sutou <kou@cozmixng.org>
+==========================================================
+
+Many API improvement.
+
+Features
+--------
+  * Support Cairo::Surface.new with block.
+  * Support RubyGems.
+  * Add experimental API Cairo::Context#pseudo_blur. (API
+    may be changed.)
+  * Fix strange Cairo::Context#push_group and
+    Cairo::Context#pop_group behaviour.
+  * Fix Cairo::Context::Path#map_path_onto.
+  * Add high-level color interface. (Cairo::Color)
+    * Improve color related API. For example:
+	From:
+	  context.set_source_rgb(1, 0, 0)
+	To:
+	  context.set_source_color(:red)
+
+    * Support color type conversion between RGB, CMYK and HSV.
+    * Many default color definitions.
+  * Support path creation using Cairo::Path without
+    Cairo::Context.
+  * Improve constant value specify API. For example:
+      From:
+        Cairo::ImageSurface.new(Cairo::FORMAT_ARGB32, 100, 100)
+      To:
+        Cairo::ImageSurface.new(:argb32, 100, 100)
+  * Support win32 surface. (Yoshinao Muramatsu)
+
+Release 1.4.1 (2007-03-10 Kouhei Sutou <kou@cozmixng.org>)
+==========================================================
+
+Features
+--------
+  * Add missing pkg-config.rb.
+
+Release 1.4.0 (2007-03-06 Kouhei Sutou <kou@cozmixng.org>)
+==========================================================
+
+Features
+--------
+  * All cairo 1.4.0 API are implemented.
+
+Release 1.2.0 (2006-07-01 Kouhei Sutou <kou@cozmixng.org>)
+==========================================================
+
+Features
+--------
+  * All cairo 1.2.0 API are implemented.
+  * SVG surface is supported.
+
+Release 1.0.0 (2005-10-16 Kouhei Sutou <kou@cozmixng.org>)
+==========================================================
+
+Features
+--------
+  * All cairo 1.0.0 API are implemented.
+  * PS/PDF surfaces are supported.

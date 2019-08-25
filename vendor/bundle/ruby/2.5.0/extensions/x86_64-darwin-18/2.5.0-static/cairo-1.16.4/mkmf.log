@@ -1,0 +1,1377 @@
+checking for GCC... -------------------- yes
+
+"clang -o conftest -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/kawainatsuki/.rbenv/versions/2.5.1/lib -L. -L/Users/kawainatsuki/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib     -lruby.2.5.1-static -framework Foundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"clang -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: #ifndef __GNUC__
+5: # error
+6: |:/ === __GNUC__ undefined === /:|
+7: #endif
+/* end */
+
+--------------------
+
+checking for Homebrew... -------------------- yes
+
+--------------------
+
+have_package: checking for cairo version (>= 1.2.0)... -------------------- no
+
+--------------------
+
+"brew install cairo"
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/services).
+==> New Formulae
+asyncplusplus
+aws-google-auth
+bazelisk
+benthos
+bitwise
+borgmatic
+cpl
+cpu_features
+dhall-bash
+dive
+gatsby-cli
+grpc-swift
+janet
+lazydocker
+lerna
+libevhtp
+libsixel
+libspng
+libvncserver
+netlify-cli
+protobuf@3.7
+pulp
+quickjs
+shadowenv
+starship
+tflint
+whalebrew
+wtfutil
+zrepl
+==> Updated Formulae
+abcm2ps
+abcmidi
+abyss
+ace
+ack
+acpica
+agda
+agedu
+algernon
+aliyun-cli
+amazon-ecs-cli
+ammonite-repl
+angband
+angular-cli
+annie
+ansible
+ansiweather
+anycable-go
+apache-arrow
+apache-arrow-glib
+apache-flink
+aptly
+arangodb
+argon2
+armadillo
+armor
+arpack
+arping
+asdf
+ask-cli
+aspell
+astrometry-net
+atlantis
+atomist-cli
+ats2-postiats
+auditbeat
+autorest
+avfs
+aws-okta
+aws-sdk-cpp
+awscli
+azure-cli
+babel
+babeld
+babl
+bacula-fd
+balena-cli
+basex
+bash
+bazel
+beanstalkd
+bear
+bgpstream
+binaryen
+bind
+bindfs
+bit
+bitcoin
+bitrise
+black
+blink1
+blueutil
+botan
+breezy
+bro
+btfs
+btparse
+buildifier
+buildkit
+bundletool
+byacc
+bzip2
+bzt
+c-blosc
+caddy
+caf
+caffe
+cake
+calcurse
+calicoctl
+camlp5
+cargo-completion
+cash-cli
+catch2
+catimg
+ccache
+ceres-solver
+certbot
+cfengine
+cfn-lint
+cfr-decompiler
+cfssl
+cgdb
+cgrep
+chakra
+chamber
+checkbashisms
+checkstyle
+chipmunk
+chronograf
+cimg
+circleci
+citus
+cjdns
+ckan
+clamav
+clhep
+click
+clojure
+cmake
+cmix
+cmus
+cnats
+cockroach
+cocoapods
+cointop
+collectd
+composer
+conan
+consul
+consul-template
+contentful-cli
+convox
+coturn
+cppcheck
+cpprestsdk
+cql
+credstash
+creduce
+cromwell
+crowdin
+crystal
+crystal-icr
+csound
+csvq
+curl
+curl-openssl
+cxxopts
+cython
+dav1d
+davmail
+dbhash
+dbus
+dcd
+deark
+debianutils
+deno
+dependency-check
+desktop-file-utils
+devspace
+dhall
+dhall-json
+di
+dialog
+diamond
+diff-pdf
+diff-so-fancy
+diffoscope
+digdag
+direvent
+distcc
+dita-ot
+django-completion
+dmd
+dnscrypt-wrapper
+dnsperf
+dnstwist
+docfx
+docker
+docker-completion
+docker-credential-helper
+docker-credential-helper-ecr
+doctl
+docutils
+doitlive
+dosbox
+dovecot
+doxygen
+dpkg
+drafter
+drone-cli
+dscanner
+dub
+duck
+dynamips
+dynare
+ecasound
+eccodes
+eiffelstudio
+ejabberd
+elasticsearch
+elektra
+elixir
+elm-format
+embree
+embulk
+emscripten
+enchant
+entr
+envconsul
+eprover
+epubcheck
+erlang
+erlang@21
+eslint
+esptool
+etcd
+ethereum
+ettercap
+exa
+exempi
+exercism
+exiftool
+exim
+exiv2
+exploitdb
+faas-cli
+fabric
+fastjar
+fasttext
+faudio
+fauna-shell
+fdroidserver
+feh
+ffmpeg
+ffmpeg@2.8
+ffsend
+fio
+firebase-cli
+flake8
+flashrom
+flawfinder
+fluid-synth
+fluxctl
+fn
+folly
+fontforge
+fonttools
+fossil
+fpp
+fragroute
+freediameter
+freeipmi
+freetds
+freetype
+frpc
+frps
+frugal
+fs-uae
+fselect
+fstrm
+fuse-emulator
+fuse-zip
+futhark
+gammaray
+gammu
+gauche
+gcc
+gcsfuse
+gdal
+gdcm
+gearman
+gearsystem
+gegl
+geoserver
+get_iplayer
+getdns
+getmail
+ghex
+ghostscript
+ghr
+gibo
+ginac
+git
+git-absorb
+git-annex
+git-cinnabar
+git-extras
+git-lfs
+gitbucket
+gitg
+gitlab-runner
+gitleaks
+gitmoji
+gitversion
+gkrellm
+glances
+glib
+glide
+glooctl
+gmic
+gmsh
+gmt
+gnu-apl
+gnunet
+gnupg
+gnuradio
+gnutls
+go
+go@1.11
+godep
+golang-migrate
+goofys
+gopass
+goreleaser
+gpgme
+gphoto2
+gpsim
+gr-osmosdr
+gradle
+grafana
+grails
+grakn
+graph-tool
+graphicsmagick
+grok
+groonga
+groovy
+grpc
+grpcurl
+gsoap
+gspell
+gst-plugins-bad
+gst-plugins-good
+gtk+3
+gtk-doc
+gtk-vnc
+guile
+gxml
+h2o
+h3
+hadolint
+hamlib
+hapi-fhir-cli
+haproxy
+harfbuzz
+hashcat
+haskell-stack
+hcloud
+helmfile
+helmsman
+help2man
+hidapi
+highlight
+hlint
+homebank
+hqx
+htpdate
+httpd
+hub
+hugo
+hwloc
+hyperkit
+hypre
+i2p
+i2pd
+i386-elf-gcc
+i386-elf-gdb
+i386-elf-grub
+idris
+igv
+imagemagick
+imagemagick@6
+imageoptim-cli
+influxdb
+inlets
+insect
+interactive-rebase-tool
+internetarchive
+ios-webkit-debug-proxy
+iperf
+ipfs
+ipopt
+ipython
+irssi
+iso-codes
+ispc
+istioctl
+isync
+jadx
+jboss-forge
+jdupes
+jemalloc
+jenkins
+jenkins-lts
+jetty
+jfrog-cli-go
+jhead
+jhipster
+jing-trang
+jinja2-cli
+jlog
+joplin
+jruby
+jsdoc3
+jsoncpp
+juju
+jvgrep
+k3d
+k6
+kibana
+kim-api
+klavaro
+knot
+kobalt
+kops
+kore
+kotlin
+ktlint
+kube-aws
+kubecfg
+kubeless
+kubeprod
+kubernetes-cli
+kubernetes-helm
+kubernetes-service-catalog-client
+kubeseal
+kustomize
+kvazaar
+lammps
+landscaper
+languagetool
+launchdns
+ldns
+lean-cli
+lego
+lf
+lgogdownloader
+libbi
+libbitcoin
+libbitcoin-blockchain
+libbitcoin-client
+libbitcoin-consensus
+libbitcoin-database
+libbitcoin-explorer
+libbitcoin-network
+libbitcoin-node
+libbitcoin-protocol
+libbitcoin-server
+libbluray
+libcouchbase
+libdazzle
+libebml
+libev
+libevent
+libexosip
+libfabric
+libgee
+libgig
+libgit2
+libgphoto2
+libgweather
+libhdhomerun
+libheif
+libimagequant
+libiodbc
+libiscsi
+libjson-rpc-cpp
+liblcf
+libmaa
+libmatio
+libmatroska
+libmodbus
+libomp
+libopenmpt
+libosinfo
+libosip
+libosmium
+libphonenumber
+libpq
+libpqxx
+libpulsar
+libqalculate
+libraw
+librealsense
+librsync
+libsbol
+libshout
+libssh
+libstatgrab
+libsvm
+libtasn1
+libtensorflow
+libtrace
+libu2f-host
+libuninameslist
+libuv
+libvirt
+libvisio
+libvpx
+libwebsockets
+libxkbcommon
+libxmlsec1
+libzdb
+link-grammar
+linkerd
+liquibase
+liquid-dsp
+lldpd
+llvm
+llvm@7
+lmdb
+lmod
+lnav
+log4cplus
+log4shib
+logcheck
+logstash
+logtalk
+lolcat
+lsd
+lsof
+luvit
+lxc
+lynis
+lz4
+mackup
+macvim
+mafft
+magic-wormhole
+mailutils
+mame
+mariadb-connector-c
+mariadb@10.1
+mbedtls
+mdbook
+mdds
+media-info
+mediaconch
+mednafen
+memcached
+memcacheq
+menhir
+mercurial
+mesa
+meson
+mesos
+metabase
+metricbeat
+mg
+micronaut
+mill
+mingw-w64
+minio
+minio-mc
+mkcert
+mkl-dnn
+mkvtoolnix
+mlkit
+mmark
+mmseqs2
+moarvm
+mockserver
+modules
+moe
+monero
+monit
+monkeysphere
+mono
+mosh
+mosquitto
+mp3cat
+mpg123
+mpop
+mrboom
+msitools
+msmtp
+mtr
+mujs
+mycli
+mypy
+mysql
+mysql++
+mysql@5.7
+n
+nagios
+nativefier
+nats-server
+nats-streaming-server
+ncdc
+ncdu
+nco
+ncview
+neo4j
+neovim
+netdata
+newman
+newsboat
+newt
+nfdump
+nghttp2
+nginx
+nickle
+nim
+nlohmann-json
+nmap
+nnn
+node
+node-build
+node@10
+node@8
+nomad
+nqp
+nsd
+nspr
+nss
+numpy
+nwchem
+nylon
+nyx
+ocaml-findlib
+ocproxy
+ocrad
+ocrmypdf
+octave
+ode
+odpi
+offlineimap
+omega
+omniorb
+oniguruma
+onscripter
+opa
+opam
+open-jtalk
+open-mesh
+open-mpi
+open-zwave
+openapi-generator
+openblas
+openconnect
+opencv
+opencv@2
+opencv@3
+openhmd
+openimageio
+openkim-models
+openldap
+openrct2
+opensaml
+openshift-cli
+openssh
+opensubdiv
+openttd
+operator-sdk
+orc
+ori
+osc
+overmind
+oxipng
+p7zip
+packer
+packer-completion
+pagmo
+paket
+pandoc-citeproc
+pango
+parallel
+passenger
+pazpar2
+pc6001vx
+pcb2gcode
+pcsc-lite
+pdfcrack
+pdftoipe
+pdns
+pdnsrec
+pegtl
+perltidy
+petsc
+petsc-complex
+pgbouncer
+pgweb
+php
+php@7.2
+phpmd
+phpstan
+phpunit
+picard-tools
+pinboard-notes-backup
+pioneer
+pius
+pjproject
+planck
+plantuml
+platformio
+platypus
+pmd
+png++
+pngquant
+poco
+podofo
+pony-stable
+ponyc
+poppler
+postgis
+postgresql
+postgresql@10
+postgresql@9.4
+postgresql@9.5
+postgresql@9.6
+postgrest
+pre-commit
+presto
+prips
+procyon-decompiler
+proftpd
+proguard
+proj
+prometheus
+proteinortho
+protobuf
+protobuf-c
+protobuf-swift
+protoc-gen-go
+prototool
+pspg
+pulumi
+pushpin
+putty
+puzzles
+pyenv
+pyinstaller
+pyside
+python
+python-markdown
+pyvim
+qemu
+qmmp
+qpid-proton
+qrupdate
+qt
+quantlib
+r
+rabbitmq
+radare2
+rakudo
+re-flex
+re2
+re2c
+rebar3
+recon-ng
+redex
+redo
+redsocks
+remarshal
+remctl
+repo
+reposurgeon
+rex
+ripgrep
+rke
+robot-framework
+roswell
+rpm2cpio
+rsyslog
+rtags
+rush
+rust
+s-nail
+s3-backer
+s3ql
+s6
+saldl
+sane-backends
+saxon
+sbcl
+scala@2.12
+scalapack
+scamper
+sccache
+scdoc
+sceptre
+schismtracker
+scipy
+scons
+scrcpy
+sdl2_image
+sdlpop
+ser2net
+serverless
+sf-pwgen
+sflowtool
+shadowsocks-libev
+shc
+shellcheck
+shellharden
+shibboleth-sp
+ship
+shogun
+silk
+sip
+sispmctl
+skaffold
+skinny
+skopeo
+sleuthkit
+snakemake
+snapcraft
+solarus
+solr
+sonar-scanner
+sonarqube
+sonobuoy
+sourcekitten
+sourcery
+spdylay
+speedtest-cli
+sphinx-doc
+spice-protocol
+spim
+spin
+spirv-cross
+sqldiff
+sqlite
+sqlite-analyzer
+sqlmap
+squid
+src
+srt
+sshguard
+sslsplit
+sstp-client
+stanford-parser
+stella
+stern
+stolon
+stow
+streamlink
+stress-ng
+stuntman
+subnetcalc
+subversion
+suil
+suite-sparse
+sundials
+supervisor
+svgo
+swagger-codegen
+swagger-codegen@2
+swaks
+swi-prolog
+swift-protobuf
+swiftformat
+swiftlint
+swig
+syncthing
+sysdig
+tag
+taisei
+tarantool
+taskell
+tealdeer
+telegraf
+telegram-cli
+teleport
+termtosvg
+terraform
+terraform-inventory
+terraformer
+terragrunt
+terrahub
+tesseract
+thors-serializer
+tika
+tile38
+tintin
+tinyxml2
+tmate
+tmpreaper
+tmux
+todoman
+tokei
+tomcat
+tomcat-native
+tomcat@7
+tomcat@8
+tomee-plus
+topgit
+topgrade
+tor
+tox
+traefik
+trafficserver
+translate-shell
+translate-toolkit
+triton
+ttyd
+tunnel
+tvnamer
+twemcache
+twine-pypi
+txr
+typescript
+u-boot-tools
+ucloud
+udunits
+uftp
+uhd
+unbound
+ungit
+unrtf
+unzip
+urh
+uriparser
+userspace-rcu
+uwsgi
+v8
+vala
+valgrind
+vapoursynth
+vapoursynth-imwri
+vapoursynth-ocr
+vapoursynth-sub
+vault
+vaulted
+vegeta
+velero
+vert.x
+vfuse
+vifm
+vim
+vim@7.4
+vimpc
+vips
+visp
+vit
+vitetris
+vmtouch
+vnstat
+volatility
+vtk
+vttest
+vulkan-headers
+wandio
+watchexec
+watson
+wcslib
+webdis
+webp
+webpack
+websocat
+webtorrent-cli
+wgetpaste
+whois
+widelands
+wireguard-go
+wireguard-tools
+wiremock-standalone
+wireshark
+wolfssl
+wp-cli
+wtf
+wxmac
+wxmaxima
+x11vnc
+x265
+x3270
+xa
+xapian
+xdot
+xml-tooling-c
+xonsh
+xorriso
+xrootd
+xsimd
+xtensor
+xxhash
+yamllint
+yank
+yapf
+yarn
+yash
+yaws
+yaz
+ydcv
+ykman
+ykpers
+you-get
+youtube-dl
+zabbix
+zabbix-cli
+zbackup
+zboy
+zelda-roth-se
+zeromq
+zimg
+znc
+zsdx
+zshdb
+zstd
+zsxd
+zurl
+==> Renamed Formulae
+confluent-oss -> confluent-platform
+transmission -> transmission-cli
+==> Deleted Formulae
+libggz
+libguess
+lysp
+smlnj
+
+==> Installing dependencies for cairo: freetype, fontconfig, libffi, pcre, sqlite, python, glib, lzo and pixman
+==> Installing cairo dependency: freetype
+==> Downloading https://homebrew.bintray.com/bottles/freetype-2.10.1.mojave.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/2f/2f5716f987df6f45a9d66e5f9af935bbb4202fe0b9850b6b0660fd6555ba1be4?__gda__=exp=1566725630~hmac=a10b1ba176b60841754b4e8f715b0d90d1ebbf50c57b5711497b643cccd3547e&response-content-disposition=attachment%3Bfilename%3D%22freetype-2.10.1.mojave.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGVkX19ZrzKknnT_KUI7_CUACNMRvsJMb4TJvpeYdtsOrjZUCr0Dj3nb8jR_AT4ivkLUCoIJdBtSYLyp7kymmRsyi1aCiZYuNd-7isnHtK0yVqXT6hV9qqsUB8cdsU0hRk6bkOVstVpKn-iCkg&response-X-Checksum-Sha1=9d61a635caf8ca6e552c18bdac88eaca21f9b761&response-X-Checksum-Sha2=2f5716f987df6f45a9d66e5f9af935bbb4202fe0b9850b6b0660fd6555ba1be4
+==> Pouring freetype-2.10.1.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/freetype/2.10.1: 61 files, 2.2MB
+==> Installing cairo dependency: fontconfig
+==> Downloading https://homebrew.bintray.com/bottles/fontconfig-2.13.1.mojave.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/1c/1c704a5a4249252bf42dc4f2a458f911a7858a931858ad257d9ec39978ca5095?__gda__=exp=1566725633~hmac=0ab9f3f60a21be5ab440dead9f786515b67c659b5cf1ccc7bafdbf016906893d&response-content-disposition=attachment%3Bfilename%3D%22fontconfig-2.13.1.mojave.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGVkX18k-RTJRv3IAar76JnI-CtsDNczb-V-hIAN6ddEVyiuhwZEu92CEK7BS29ql2Ef_KOsq4suQaieD0htXGTHMtz39VAxAunqmSl6JiVC6i-T1sn6fx-d6msyulo9aTUIEGl61HcBVGdRHg&response-X-Checksum-Sha1=fe9af0cb6b5fdf0799ebfeeb99fbf2e04a49bfb3&response-X-Checksum-Sha2=1c704a5a4249252bf42dc4f2a458f911a7858a931858ad257d9ec39978ca5095
+==> Pouring fontconfig-2.13.1.mojave.bottle.tar.gz
+==> Regenerating font cache, this may take a while
+==> /usr/local/Cellar/fontconfig/2.13.1/bin/fc-cache -frv
+🍺  /usr/local/Cellar/fontconfig/2.13.1: 531 files, 3.3MB
+==> Installing cairo dependency: libffi
+==> Downloading https://homebrew.bintray.com/bottles/libffi-3.2.1.mojave.bottle.tar.gz
+==> Pouring libffi-3.2.1.mojave.bottle.tar.gz
+==> Caveats
+libffi is keg-only, which means it was not symlinked into /usr/local,
+because some formulae require a newer version of libffi.
+
+For compilers to find libffi you may need to set:
+  export LDFLAGS="-L/usr/local/opt/libffi/lib"
+
+For pkg-config to find libffi you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/libffi/3.2.1: 16 files, 296.8KB
+==> Installing cairo dependency: pcre
+==> Downloading https://homebrew.bintray.com/bottles/pcre-8.43.mojave.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/08/08e7414a7641d1e184c936537ff67f72f52649374d2308b896d4146ccc2c08fe?__gda__=exp=1566725647~hmac=e59bc7769e1386325fce99344b78cbb37ab9392c9e8cea0e8a17446960786b4e&response-content-disposition=attachment%3Bfilename%3D%22pcre-8.43.mojave.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGVkX18LcPVhGLFEp-_xBBzGSUto7Zy6m1eezwwAiwNKllKlcSbII0Fwu5P0TUd2oIthHiywxSQ1Ch_IyPIZbH7K_Dfw0D17_-OJvF4DEDeSQXaHXJVfXnpPsdAhNyJJGUHHH9Rwm0m84JvaGA&response-X-Checksum-Sha1=6ec5ee2abef4dc9a20de4ccb2d13c31d967f841d&response-X-Checksum-Sha2=08e7414a7641d1e184c936537ff67f72f52649374d2308b896d4146ccc2c08fe
+==> Pouring pcre-8.43.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre/8.43: 204 files, 5.5MB
+==> Installing cairo dependency: sqlite
+==> Downloading https://homebrew.bintray.com/bottles/sqlite-3.29.0.mojave.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/5f/5f2f8f36a8d13733b0374ac39bdcd32dea10315e7442b9bb9942465487cb7811?__gda__=exp=1566725650~hmac=2914c1fbb6be8008417a8699d1e074df007d09df78204945e8e8150754ef159a&response-content-disposition=attachment%3Bfilename%3D%22sqlite-3.29.0.mojave.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGVkX195A5vfwgPWXvPM8TNHiVHmoMGuwSu7_A4U26Rvekcu1KCIIXXct6ThYzjOCr6Jjj9rJ1FP9VODZq9J19_vpYLr1sq1JNBYfaU6Cnm2T7fFiYc3k22DTgvE2H4rIxF6B5nkEsZiLcT1VQ&response-X-Checksum-Sha1=d4a30f9e3e8c97ce6f65d48db2e2bb63629785c5&response-X-Checksum-Sha2=5f2f8f36a8d13733b0374ac39bdcd32dea10315e7442b9bb9942465487cb7811
+==> Pouring sqlite-3.29.0.mojave.bottle.tar.gz
+==> Caveats
+sqlite is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides an older sqlite3.
+
+If you need to have sqlite first in your PATH run:
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find sqlite you may need to set:
+  export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+  export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+
+For pkg-config to find sqlite you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/sqlite/3.29.0: 11 files, 3.9MB
+==> Installing cairo dependency: python
+==> Downloading https://homebrew.bintray.com/bottles/python-3.7.4.mojave.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/81/81fc6e5914a16387bd09387ce08e99122ea3ad65c55ded42ea07f40952aa20d1?__gda__=exp=1566725652~hmac=fa4a26e221c4c3cf638e1076e6aa9c2e020416c6eac6126f1b9ceff193f21b79&response-content-disposition=attachment%3Bfilename%3D%22python-3.7.4.mojave.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGVkX193909OPg7tat2_xHTIlujelURdWf3P38oKozvoyoQ9ktynXjVa7MCxRLPyYQ5lOE45svzWoJKyt4AtsCoGYWxvyMwECyduqSdF2wvcILfrWObxUC6tK04X3STi5LTiCU3lbapXlkcWCw&response-X-Checksum-Sha1=5a563575ea336d3a36396df447c6cc4591d0b873&response-X-Checksum-Sha2=81fc6e5914a16387bd09387ce08e99122ea3ad65c55ded42ea07f40952aa20d1
+==> Pouring python-3.7.4.mojave.bottle.tar.gz
+==> /usr/local/Cellar/python/3.7.4/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python/3.7.4/bin --install-lib=/usr/local/lib/python3.7/site-packages --single-version-externally-managed --record=installed.txt
+==> /usr/local/Cellar/python/3.7.4/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python/3.7.4/bin --install-lib=/usr/local/lib/python3.7/site-packages --single-version-externally-managed --record=installed.txt
+==> /usr/local/Cellar/python/3.7.4/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python/3.7.4/bin --install-lib=/usr/local/lib/python3.7/site-packages --single-version-externally-managed --record=installed.txt
+==> Caveats
+Python has been installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python/libexec/bin
+
+If you need Homebrew's Python 2.7 run
+  brew install python@2
+
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.7/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /usr/local/Cellar/python/3.7.4: 3,865 files, 60MB
+==> Installing cairo dependency: glib
+==> Downloading https://homebrew.bintray.com/bottles/glib-2.60.6.mojave.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/cb/cb0b27f37cc011ba0e5ffcd044273c6b5e25da50fd230633b00d1f00ed72a645?__gda__=exp=1566725663~hmac=f69cb342fe5fd3408234992392cb36606f565459b60d5eeadc76f405bebe8574&response-content-disposition=attachment%3Bfilename%3D%22glib-2.60.6.mojave.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGVkX19SdzXzUGvXOq8TRyHxc16NX81MjnCQf0XrIVFLuttAsMHuyQowqX0b8MgLJ4yJrN-l2ku0t6piYY247ql-OMb2P9QX06eAlJ0QANJVOEhBKIE37s9rqfFqcg93OSwqTYpiavwatKJ6Eg&response-X-Checksum-Sha1=a99b1666af3dbf5cb6cfc50f1eaa877847528c6e&response-X-Checksum-Sha2=cb0b27f37cc011ba0e5ffcd044273c6b5e25da50fd230633b00d1f00ed72a645
+==> Pouring glib-2.60.6.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/glib/2.60.6: 429 files, 15.2MB
+==> Installing cairo dependency: lzo
+==> Downloading https://homebrew.bintray.com/bottles/lzo-2.10.mojave.bottle.tar.gz
+==> Pouring lzo-2.10.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/lzo/2.10: 31 files, 549.7KB
+==> Installing cairo dependency: pixman
+==> Downloading https://homebrew.bintray.com/bottles/pixman-0.38.4.mojave.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/39/3990b771ee29451c8a9bcb6cb077205ae08adc0d5af2faebf29197d13c36a51a?__gda__=exp=1566725673~hmac=b08e035764ea2eaea47de5feb0bac3db5c94bc7ed02d4eabe9a12bccce297341&response-content-disposition=attachment%3Bfilename%3D%22pixman-0.38.4.mojave.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGVkX19RYb4cE4asq6CP-_ND80_n6zA-cvwDy8n8yMy9WRfm3NGHBcC1tds5A8TquG_ebe5tmDjl7kNXeFwauzsEynIMyCLjiBlpMk-ylGAnqGi9GXQY1EwWQ6sVLgq0k2iR2bkacnp4ZFqrWw&response-X-Checksum-Sha1=44e568adb3b541f3e26bcc6b4e4021f3cdfa558b&response-X-Checksum-Sha2=3990b771ee29451c8a9bcb6cb077205ae08adc0d5af2faebf29197d13c36a51a
+==> Pouring pixman-0.38.4.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/pixman/0.38.4: 13 files, 1.3MB
+==> Installing cairo
+==> Downloading https://homebrew.bintray.com/bottles/cairo-1.16.0_2.mojave.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/fc/fcda779381271541f623470a74b8b0164f1e83c9154b7b7f4ed23038aac3f5d6?__gda__=exp=1566725676~hmac=13a601d17eae2b995dcb9f30eeafdf0e777990d64cca628a66739266f07735b1&response-content-disposition=attachment%3Bfilename%3D%22cairo-1.16.0_2.mojave.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGVkX19RpRHnNq1cEGiBCIa5AfMUDZVuvVuNayA6A9ZJxhLegH3Yn73HIcjUM5KeGG1MLoB1sG5fpm_FZqzjpoTKkLPzr0gg3H3wP7b6lw_YQCm-4U04ofL7ZFNPmvS-8s423BFvVr-nHJgA3A&response-X-Checksum-Sha1=b893b002d419309c13084d25a66aa57c65a77394&response-X-Checksum-Sha2=fcda779381271541f623470a74b8b0164f1e83c9154b7b7f4ed23038aac3f5d6
+==> Pouring cairo-1.16.0_2.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/cairo/1.16.0_2: 117 files, 5.5MB
+==> `brew cleanup` has not been run in 30 days, running now...
+Removing: /Users/kawainatsuki/Library/Caches/Homebrew/elixir--1.9.0.mojave.bottle.tar.gz... (3.9MB)
+Removing: /Users/kawainatsuki/Library/Caches/Homebrew/erlang--22.0.4.mojave.bottle.tar.gz... (77MB)
+Removing: /usr/local/Cellar/freetype/2.9.1... (60 files, 2.6MB)
+Removing: /usr/local/Cellar/libpng/1.6.36... (27 files, 1.2MB)
+Removing: /usr/local/Cellar/libtiff/4.0.10... (246 files, 3.5MB)
+Removing: /Users/kawainatsuki/Library/Caches/Homebrew/pyenv--1.2.12.mojave.bottle.tar.gz... (625.0KB)
+Removing: /usr/local/Cellar/python/3.7.2... (3,888 files, 60.6MB)
+Removing: /usr/local/Cellar/readline/8.0.0... (48 files, 1.5MB)
+Removing: /usr/local/Cellar/sqlite/3.25.3... (11 files, 3.7MB)
+Removing: /usr/local/Cellar/sqlite/3.26.0... (11 files, 3.7MB)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/pyenv... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/libtiff... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/gmp... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/wget... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/wxmac... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/libidn2... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/libpng... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/elixir... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/libunistring... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/readline... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/erlang... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/ruby-build... (2 files, 179B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/gettext... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/openssl@1.1... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/openssl... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/rbenv... (64B)
+Removing: /Users/kawainatsuki/Library/Logs/Homebrew/automake... (64B)
+Pruned 0 symbolic links and 4 directories from /usr/local
+==> Caveats
+==> libffi
+libffi is keg-only, which means it was not symlinked into /usr/local,
+because some formulae require a newer version of libffi.
+
+For compilers to find libffi you may need to set:
+  export LDFLAGS="-L/usr/local/opt/libffi/lib"
+
+For pkg-config to find libffi you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
+==> sqlite
+sqlite is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides an older sqlite3.
+
+If you need to have sqlite first in your PATH run:
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find sqlite you may need to set:
+  export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+  export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+
+For pkg-config to find sqlite you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+
+==> python
+Python has been installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python/libexec/bin
+
+If you need Homebrew's Python 2.7 run
+  brew install python@2
+
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.7/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+installing 'cairo' native package... succeeded
+--------------------
+
+have_package: checking for cairo version (>= 1.2.0)... -------------------- yes
+
+--------------------
+
+have_package: checking for cairo-ft... -------------------- yes
+
+--------------------
+
+yes
+checking for RubyCocoa... no
+checking for macOS... -------------------- yes
+
+checking for CAIRO_HAS_QUARTZ_SURFACE in cairo.h... have_macro: checking for CAIRO_HAS_QUARTZ_SURFACE in cairo.h... -------------------- yes
+
+"clang -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -Wall     -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <cairo.h>
+4: /*top*/
+5: #ifndef CAIRO_HAS_QUARTZ_SURFACE
+6: # error
+7: |:/ === CAIRO_HAS_QUARTZ_SURFACE undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+block in <main>: checking for RubyCocoa... -------------------- no
+
+--------------------
+
+--------------------
+
+have_macro: checking for HAVE_RUBY_ST_H in ruby.h... -------------------- yes
+
+"clang -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -Wall     -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: /*top*/
+5: #ifndef HAVE_RUBY_ST_H
+6: # error
+7: |:/ === HAVE_RUBY_ST_H undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_macro: checking for HAVE_RUBY_IO_H in ruby.h... -------------------- yes
+
+"clang -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -Wall     -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: /*top*/
+5: #ifndef HAVE_RUBY_IO_H
+6: # error
+7: |:/ === HAVE_RUBY_IO_H undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_func: checking for rb_errinfo() in ruby.h... -------------------- yes
+
+"clang -o conftest -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -Wall   conftest.c  -L. -L/Users/kawainatsuki/.rbenv/versions/2.5.1/lib -L. -L/Users/kawainatsuki/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib -L/usr/local/Cellar/cairo/1.16.0_2/lib -L/usr/local/Cellar/cairo/1.16.0_2/lib -L/usr/local/opt/freetype/lib     -lcairo -lcairo -lfreetype -lruby.2.5.1-static -framework Foundation  -lcairo -lcairo -lfreetype -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_errinfo; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_adjust_memory_usage() in ruby.h... -------------------- yes
+
+"clang -o conftest -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -Wall   conftest.c  -L. -L/Users/kawainatsuki/.rbenv/versions/2.5.1/lib -L. -L/Users/kawainatsuki/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib -L/usr/local/Cellar/cairo/1.16.0_2/lib -L/usr/local/Cellar/cairo/1.16.0_2/lib -L/usr/local/opt/freetype/lib     -lcairo -lcairo -lfreetype -lruby.2.5.1-static -framework Foundation  -lcairo -lcairo -lfreetype -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_adjust_memory_usage; return !p; }
+/* end */
+
+--------------------
+
+have_type: checking for enum ruby_value_type in ruby.h... -------------------- yes
+
+"clang -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/usr/local/Cellar/cairo/1.16.0_2/include/cairo -I/usr/local/Cellar/glib/2.60.6/include -I/usr/local/Cellar/libffi/3.2.1/lib/libffi-3.2.1/include -I/usr/local/Cellar/glib/2.60.6/include/glib-2.0 -I/usr/local/Cellar/glib/2.60.6/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.43/include -I/usr/local/Cellar/pixman/0.38.4/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.13.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libpng/1.6.37/include/libpng16 -I/Users/kawainatsuki/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -Wall     -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: typedef enum ruby_value_type conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
