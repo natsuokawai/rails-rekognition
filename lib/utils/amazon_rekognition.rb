@@ -40,6 +40,41 @@ class AmazonRekognition
       matched_faces.compact
     end
 
+    def individual_recognition(image_path)
+      matched_faces = search_all_faces_by_image(image_path)
+      puts "#{matched_faces.size} peeple are matched in the collection of faces."
+      return if matched_faces.size == 0
+
+      rimg = Magick::ImageList.new(image_path)
+      gc = Magick::Draw.new
+
+      matched_faces.each do |face|
+        user = RekognitionFace.find_by(face_id: face[:matched_face_id])&.user
+        next if user.blank?
+
+        puts "use_name: " + user.name
+        bbox = face[:searched_face_bounding_box]
+
+        x1 = rimg.columns * bbox[:left]
+        y1 = rimg.rows * bbox[:top]
+        x2 = rimg.columns * (bbox[:left] + bbox[:width])
+        y2 = rimg.rows * (bbox[:top] + bbox[:height])
+
+        gc.fill_opacity(0)
+        gc.stroke('red')
+        gc.stroke_width(3)
+        gc.rectangle x1, y1, x2, y2
+
+        gc.fill('black')
+        gc.pointsize(50)
+        gc.text(x1, y1 - 25, user.name)
+      end
+      
+      gc.draw(rimg)
+      rimg.write "app/assets/images/result_#{Time.zone.now}.jpg"
+      puts "done!"
+    end
+
     private
 
     def client
