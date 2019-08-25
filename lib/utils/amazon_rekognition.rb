@@ -1,14 +1,14 @@
 class AmazonRekognition
   class << self
-    def index_faces(image)
+    def index_faces(image_path)
       res = client.index_faces({
         collection_id: collection_id,
         image: {
-          bytes: image
+          bytes: File.open(image_path, 'r+b')
         }
       })
 
-      res.to_h[:face_records].map { |face| [face[:face_id], face[:bounding_box]] }.to_h
+      res.to_h[:face_records].map { |face| [face[:face][:face_id], face[:face][:bounding_box]] }.to_h
     end
 
     def search_faces(face_id)
@@ -24,14 +24,17 @@ class AmazonRekognition
       { searched_face_id: searched_face_id, matched_face_id: matched_face_id }
     end
 
-    def search_all_faces_by_image(image)
-      faces = index_faces(image)
+    def search_all_faces_by_image(image_path)
+      faces = index_faces(image_path)
 
-      matched_faces = faces.keys.map do |face_id|
-        search_faces(face_id)
+      matched_faces = faces.map do |face_id, bounding_box|
+        result = search_faces(face_id)
+        result[:searched_face_bounding_box] = bounding_box
+
+        result
       end
 
-      matched_faces.map { |face| [face[:face_id], face[:bounding_box]] }.to_h
+      matched_faces
     end
 
     private
