@@ -1,0 +1,2 @@
+class RekognitionFace < ApplicationRecord
+end
