@@ -33,13 +33,13 @@ User.in_the_image(image_path)
 ### Example
 Put these images in `app/assets/images`. Top two images are used for registering faces. The last one is used for testing.
 
-okawa-san.jpg
+okawa-san.jpg<br>
 <img src="https://user-images.githubusercontent.com/25678257/63835789-2ba3e100-c9b3-11e9-816e-ad1cc756ce50.jpg" width="500">
 
-yusei-san.jpg
+yusei-san.jpg<bbr>
 <img src="https://user-images.githubusercontent.com/25678257/63835794-2e063b00-c9b3-11e9-9a09-bcb38ca6deae.jpg" width="500">
 
-test.jpg
+test.jpg<r>
 <img src="https://user-images.githubusercontent.com/25678257/63836098-de743f00-c9b3-11e9-9927-e48ae138da9e.jpg" width="500">
 
 Then, run following scripts.
@@ -52,5 +52,5 @@ user2.register_face('app/assets/images/yusei-san.jpg')
 
 AmazonRekognition.individual_recognition('app/assets/images/test.jpg')
 ```
-Then, the output images is in `app/assets/images/`.
+Then, the output images is in `app/assets/images/`.<br>
 <img src="https://user-images.githubusercontent.com/25678257/63835795-30689500-c9b3-11e9-999f-52358138b6de.jpg" width="750">
