@@ -1,24 +1,30 @@
-# README
+# Rails Rekognition
+This is a sample of personal detection using Amazon Rekognition.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Usage
+### Basic steps
+1. Register users
+```rb
+user = User.create(name: 'Alice')
+```
 
-Things you may want to cover:
+2. Register images of her/his face
+```rb
+user.register_face(image_path)
+```
 
-* Ruby version
+3. Search faces by image
+```rb
+AmazonRekognition.search_all_faces_by_image(image_path)
+```
 
-* System dependencies
+### Ohter usages
+You can annotate input images.
+```rb
+AmazonRekognition.individual_recognition(image_path)
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Or you can also get user instances in a image.
+```
+User.in_the_image(image_path)
+```
