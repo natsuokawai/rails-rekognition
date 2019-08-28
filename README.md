@@ -36,10 +36,10 @@ Put these images in `app/assets/images`. Top two images are used for registering
 okawa-san.jpg<br>
 <img src="https://user-images.githubusercontent.com/25678257/63835789-2ba3e100-c9b3-11e9-816e-ad1cc756ce50.jpg" width="500">
 
-yusei-san.jpg<bbr>
+yusei-san.jpg<br>
 <img src="https://user-images.githubusercontent.com/25678257/63835794-2e063b00-c9b3-11e9-9a09-bcb38ca6deae.jpg" width="500">
 
-test.jpg<r>
+test.jpg<br>
 <img src="https://user-images.githubusercontent.com/25678257/63836098-de743f00-c9b3-11e9-9927-e48ae138da9e.jpg" width="500">
 
 Then, run following scripts.
